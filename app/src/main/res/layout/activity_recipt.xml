@@ -9,53 +9,41 @@
     tools:context=".recipt">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:background="@drawable/bill_view"
         android:layout_gravity="center"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="50dp"
+        android:layout_margin="50dp"
         android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="100dp"
-            android:layout_marginRight="100dp"
-            android:layout_marginBottom="5dp"
-            android:gravity="center"
+            android:layout_gravity="center"
             android:onClick="pay"
             android:text="Receipt"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:paddingBottom="5dp"/>
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
+                android:layout_height="match_parent"
                 android:orientation="vertical">
 
                 <LinearLayout
-                    android:id="@+id/linearLayout4"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginBottom="8dp"
-                    app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.978">
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp">
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         app:srcCompat="@drawable/patientname">
-
                     </ImageView>
 
                     <LinearLayout
@@ -67,8 +55,6 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="left"
                             android:text="patient name"
                             android:textSize="10dp"
                             android:textStyle="bold" />
@@ -76,10 +62,9 @@
                         <TextView
                             android:id="@+id/pname"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="left"
+                            android:layout_height="match_parent"
                             android:textStyle="bold"
+                            android:gravity="center_vertical"
                             android:text="patient Name" />
 
                     </LinearLayout>
@@ -87,14 +72,9 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/linearLayout6"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginBottom="8dp"
-                    app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent">
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -113,8 +93,6 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="left"
                             android:text="age"
                             android:textSize="10dp"
                             android:textStyle="bold" />
@@ -122,10 +100,9 @@
                         <TextView
                             android:id="@+id/page"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="left"
+                            android:layout_height="match_parent"
                             android:textStyle="bold"
+                            android:gravity="center_vertical"
                             android:text="patient Name" />
 
                     </LinearLayout>
@@ -133,14 +110,9 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/linearLayout5"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginBottom="8dp"
-                    app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent">
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -160,8 +132,6 @@
 
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="left"
                             android:text="gender"
                             android:textSize="10dp"
                             android:textStyle="bold" />
@@ -169,24 +139,17 @@
                         <TextView
                             android:id="@+id/pgen"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="left"
+                            android:layout_height="match_parent"
                             android:textStyle="bold"
+                            android:gravity="center_vertical"
                             android:text="patient Name" />
 
                     </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/linearLayout"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginBottom="8dp"
-                    app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent">
+                    android:layout_height="wrap_content">
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -198,16 +161,13 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:paddingLeft="5dp">
 
                         <TextView
-
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="left"
                             android:text="address"
                             android:textSize="10dp"
                             android:textStyle="bold" />
@@ -216,8 +176,6 @@
                             android:id="@+id/padd"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="left"
                             android:textStyle="bold"
                             android:text="patient Name" />
 
@@ -225,17 +183,9 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/linearLayout2"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginBottom="8dp"
-                    android:gravity="center"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.577">
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -249,13 +199,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical"
-                        android:paddingLeft="5dp">
+                        android:paddingLeft="5dp"
+                        android:gravity="center_vertical">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="left"
                             android:text="contact number"
                             android:textSize="10dp"
                             android:textStyle="bold" />
@@ -264,8 +213,6 @@
                             android:id="@+id/pcn"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="left"
                             android:textStyle="bold"
                             android:text="patient Name" />
 
@@ -275,12 +222,8 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginBottom="8dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent">
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -299,8 +242,6 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="left"
                             android:text="doctor name"
                             android:textSize="10dp"
                             android:textStyle="bold" />
@@ -308,10 +249,9 @@
                         <TextView
                             android:id="@+id/dname"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="left"
+                            android:layout_height="match_parent"
                             android:textStyle="bold"
+                            android:gravity="center_vertical"
                             android:text="patient Name" />
 
                     </LinearLayout>
@@ -320,12 +260,8 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginBottom="8dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent">
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -344,8 +280,6 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="left"
                             android:text="date"
                             android:textSize="10dp"
                             android:textStyle="bold" />
@@ -353,10 +287,9 @@
                         <TextView
                             android:id="@+id/tdate"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="left"
+                            android:layout_height="match_parent"
                             android:textStyle="bold"
+                            android:gravity="center_vertical"
                             android:text="patient Name" />
 
                     </LinearLayout>
@@ -364,14 +297,9 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/linearLayout3"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginBottom="20dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent">
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -391,8 +319,6 @@
                             android:id="@+id/loginscrn"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="left"
                             android:text="charge in INR"
                             android:textSize="10dp"
                             android:textStyle="bold" />
@@ -400,10 +326,9 @@
                         <TextView
                             android:id="@+id/money"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="left"
+                            android:layout_height="match_parent"
                             android:text="100"
+                            android:gravity="center_vertical"
                             android:textStyle="bold" />
 
                     </LinearLayout>
@@ -414,6 +339,7 @@
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
                     android:background="@drawable/bg_button1"
                     android:onClick="pay"
                     android:text="paynow" />
